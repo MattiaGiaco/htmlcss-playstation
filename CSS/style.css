@@ -1,3 +1,76 @@
+.mg-container{
+  width: 90%;
+  min-height: 50px;
+  background-color: tan;
+  margin: 35px auto 0 auto;
+}
+
+.returnal{
+  background-image: url(../img/jumbo-bg.png);
+}
+
+.it-takes-two{
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.mg-bg-gray{
+  background-color: lightgray;
+}
+
+.mg-bg-blue{
+  background-color: darkblue;
+}
+
+/* HEADER */
 .mg-header-top{
   background-color: black;
+}
+
+.mg-header-bottom{
+  
+}
+
+/* MAIN */
+/* junbotron */
+.mg-game{
+  position: relative;
+  width: 100vw;
+  height: 675px;
+  background-size: cover;
+  background-position: center;
+}
+
+.mg-game-content{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  color: white;
+}
+
+.mg-games{
+  margin-top: 30px;
+}
+
+.mg-box{
+  height: 100px;
+  background-color: slategray;
+}
+
+/* playstation 5 */
+.mg-ps5-title, .mg-ps4-title{
+  width: 40%;
+  margin: 0 auto 50px auto;
+}
+
+.mg-product{
+  background-color: slategray;
+  width: 100px;
+  height: 100px;
+}
+
+/* FOOTER */
+footer{
+  background-color: dodgerblue;
+  min-height: 100px;
 }
