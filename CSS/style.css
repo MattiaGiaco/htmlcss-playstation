@@ -25,12 +25,19 @@ h2{
   font-size: 40px;
 }
 
-.mg-purchase{
+.mg-btn-orange{
   background-color: #cd3d0f;
   border-color: #cd3d0f;
   border-radius: 20px;
   padding: 5px 13px;
   position: relative;
+}
+
+.mg-btn-blue{
+  background-color: #2d64e6;
+  border-color: #2d64e6;
+  border-radius: 20px;
+  padding: 5px 13px;
 }
 
 .mg-inner::after{
@@ -52,6 +59,10 @@ h2{
 
 .mg-purchase:hover .mg-inner{
   display: block;
+}
+
+.mg-info{
+  padding-top: 50%;
 }
 
 /* HEADER */
@@ -86,20 +97,32 @@ h2{
 }
 
 .mg-box{
-  height: 100px;
+  overflow: hidden;
+  border-radius: 15px;
+  
   background-color: slategray;
+}
+
+.mg-box img{
+  width: 100%;
 }
 
 /* playstation 5 */
 .mg-ps5-title, .mg-ps4-title{
   width: 40%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
+}
+.mg-ps5-title span:first-child{
+  color: #127cd1;
+  font-weight: 600;
+}
+
+.mg-text-gray{
+  color: #727272;
 }
 
 .mg-product{
-  background-color: slategray;
-  width: 100px;
-  height: 100px;
+  width: 200px;
 }
 
 /* FOOTER */
