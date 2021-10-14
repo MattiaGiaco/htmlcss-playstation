@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<header>
+<header class="fixed-top">
 
   <div class="mg-header-top text-end px-3">
     <img src="img/sony_logo.svg" alt="sony" width="80" height="32">
@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Giochi
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -43,7 +43,7 @@
             </ul>
           </li>        
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Hardware
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,7 +54,7 @@
             </ul>
           </li>        
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Servizi
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -65,7 +65,7 @@
             </ul>
           </li>        
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Novità
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -76,7 +76,7 @@
             </ul>
           </li>        
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Fai Acquisti
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -87,7 +87,7 @@
             </ul>
           </li>        
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Supporto
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -101,7 +101,7 @@
 
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               My PlayStation
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -113,9 +113,9 @@
           </li>
         </ul>
 
-        <button class="btn btn-outline-success" type="submit">Accedi</button>
+        <button type="button" class="btn btn-primary mg-btn-black mg-border">Accedi</button>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <img class="mg-lens" src="img/lens.svg" alt="" width="30">
         </form>
       </div>
     </div>
@@ -172,7 +172,7 @@
     </div>
   </section>
 
-  <!-- playstatio 5 -->
+  <!-- playstation 5 -->
   <section class="mg-container">
     <div>
       <div class="mg-ps5-title text-center">
@@ -183,7 +183,7 @@
       <div">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-5 col-lg-5">
-            <div class="mg-info">
+            <div class="">
               <h2>Console PlayStation 5</h2>
               <div class="mg-text-gray">Sperimenta la nuova generazione di incredibili giochi PlayStation.</div>
               <button type="button" class="btn btn-primary mg-btn-blue mg-inner mt-4">Maggiori informazioni</button>
@@ -195,21 +195,26 @@
         </div>
       </div>
       <div class="container mt-5">
-        <div class="row">
-          <div class="col mx-4">
+        <div class="row mb-5">
+          <div class="col mx-4 mg-item-active">
             <img src="img/playstation-5-thumb.png" alt="" width="100%">
+            <h6 class="text-center">Console PS5</h6>
           </div>
-          <div class="col mx-4">
+          <div class="col mx-4 mg-item-disable">
             <img src="img/joypad-thumb.png" alt="" width="100%">
+            <h6 class="text-center">Controller wirless DuealSense&reg;</h6>
           </div>
-          <div class="col mx-4">
+          <div class="col mx-4 mg-item-disable">
             <img src="img/headset-thumb.png" alt="" width="100%">
+            <h6 class="text-center">Cuffie wireless con microfono PULSE 3&reg;</h6>
           </div>
-          <div class="col mx-4">
+          <div class="col mx-4 mg-item-disable">
             <img src="img/remote-thumb.png" alt="" width="100%">
+            <h6 class="text-center">Telecomando Media</h6>
           </div>
-          <div class="col mx-4">
+          <div class="col mx-4 mg-item-disable">
             <img src="img/camera-thumb.jpg" alt="" width="100%">
+            <h6 class="text-center">Telecamera HD</h6>
           </div>
           
         </div>
@@ -217,7 +222,7 @@
     </div>
   </section>
 
-  <!-- junbotron -->
+  <!-- junbotron2 -->
   <section class="mg-bg-black">
     <div class="mg-game" id="it-takes-two">
       <div class="mg-game-content">
@@ -237,7 +242,7 @@
         <p class="fs-5">Giochi incredibili per PS4 e PS5 disponibili ora</p>
       </div>
 
-      <div class="mg-games">
+      <div>
         <div class="row mt-3">
           <div class="col-6 col-sm-4 col-md-4 col-lg-2">
             <div class="mg-box">

@@ -33,6 +33,13 @@ h2{
   color: white;
 }
 
+.mg-btn-black{
+  background-color: #363636;
+  border-color: #363636;
+  border-radius: 20px;
+  padding: 5px 13px;
+}
+
 .mg-btn-orange{
   background-color: #cd3d0f;
   border-color: #cd3d0f;
@@ -85,10 +92,6 @@ h2{
   display: block;
 }
 
-.mg-info{
-  padding-top: 50%;
-}
-
 .mg-rounded{
   border: 2px solid #0072ce;
 }
@@ -98,11 +101,18 @@ h2{
   background-color: black;
 }
 
-.mg-header-bottom{
-  
+.mg-header-bottom ul li a{
+  color: black !important; 
+}
+
+.mg-lens{
+  margin-left: 25px;
 }
 
 /* MAIN */
+main{
+  margin-top: 108px;
+}
 /* junbotron */
 .mg-game{
   position: relative;
@@ -120,14 +130,11 @@ h2{
   color: white;
 }
 
-.mg-games{
-  
-}
-
 .mg-box{
   overflow: hidden;
   border-radius: 20px;
   padding:3px;
+  cursor: pointer;
 }
 
 .mg-box img{
@@ -147,6 +154,18 @@ h2{
 
 .mg-text-gray{
   color: #727272;
+}
+
+.mg-item-disable, .mg-item-active{
+  cursor: pointer;
+}
+
+.mg-item-active{
+  border-bottom: 3px solid #127cd1;
+}
+
+.mg-item-disable{
+  opacity: .6;
 }
 
 /* ps plus and ps now */
