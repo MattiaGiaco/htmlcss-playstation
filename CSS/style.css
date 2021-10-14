@@ -93,7 +93,13 @@ h2{
 }
 
 .mg-rounded{
-  border: 2px solid #0072ce;
+  outline: 2px solid #0072ce;
+  outline-offset: 2px;
+}
+
+.mg-bigger:hover{
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 /* HEADER */
@@ -107,6 +113,25 @@ h2{
 
 .mg-lens{
   margin-left: 25px;
+}
+
+.mg-dropdown{
+  width: 100vw !important;
+  margin-left: -80px !important;
+  border: none !important;
+  margin-top: 3px !important;
+}
+
+hr{
+  margin: 5px !important;
+}
+
+.mg-dd-dot{
+  height: 5px;
+  width: 5px;
+  background-color: #0072ce;
+  border-radius: 50%;
+  
 }
 
 /* MAIN */
@@ -131,7 +156,6 @@ main{
 }
 
 .mg-box{
-  overflow: hidden;
   border-radius: 20px;
   padding:3px;
   cursor: pointer;
@@ -140,6 +164,18 @@ main{
 .mg-box img{
   width: 100%;
   border-radius: 15px;
+}
+
+.mg-move:hover img{
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px 0px gray;
+  transition: all .5s ease-in-out;
+}
+
+.mg-rounded:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px 0px gray;
+  transition: all .5s ease-in-out
 }
 
 /* ps 5 and ps4 */
@@ -166,11 +202,22 @@ main{
 
 .mg-item-disable{
   opacity: .6;
+  transition: all .5s;
+}
+
+.mg-item-disable:hover{
+  opacity: 1;
 }
 
 /* ps plus and ps now */
 .mg-plus-tilte, .mg-now-tilte{
   padding-top: 10%;
+}
+
+/* social */
+.mg-social a img{
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 lightgray;
 }
 
 /* FOOTER */
