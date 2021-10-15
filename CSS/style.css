@@ -274,3 +274,9 @@ footer a:hover{
   border-bottom: 1px solid white;
 }
 
+@media screen and (max-width:768px){
+  .mg-discount{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
