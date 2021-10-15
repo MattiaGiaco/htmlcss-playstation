@@ -1,14 +1,14 @@
-
+/* general */
 h2{
   font-size: 40px;
 }
 
 .mg-container{
   width: 90%;
-  min-height: 50px;
   margin: 35px auto 0 auto;
 }
 
+/* backgrounds */
 #returnal{
   background-image: url(../img/jumbo-bg.png);
 }
@@ -18,7 +18,7 @@ h2{
 }
 
 .mg-bg-gray{
-  background-color: lightgray;
+  background-color: #bebcbb;
 }
 
 .mg-bg-blue{
@@ -27,17 +27,26 @@ h2{
 
 .mg-bg-black{
   background-color: #1f1f1f;
+  margin-top: 10px;
 }
 
 .mg-cl-white{
   color: white;
 }
 
+/* buttons */
 .mg-btn-black{
   background-color: #363636;
   border-color: #363636;
   border-radius: 20px;
   padding: 5px 13px;
+}
+
+.mg-btn-black:hover{
+  background-color: #363636;
+  border: 2px solid white;
+  outline: 2px solid #363636;
+  transition: all .3s;
 }
 
 .mg-btn-orange{
@@ -48,11 +57,25 @@ h2{
   position: relative;
 }
 
+.mg-btn-orange:hover{
+  background-color: #cd3d0f;
+  border: 2px solid black;
+  outline: 2px solid #cd3d0f;
+  transition: all .3s;
+}
+
 .mg-btn-blue{
   background-color: #2d64e6;
   border-color: #2d64e6;
   border-radius: 20px;
   padding: 5px 13px;
+}
+
+.mg-btn-blue:hover{
+  background-color: #2d64e6;
+  border: 2px solid white;
+  outline: 2px solid #2d64e6;
+  transition: all .3s;
 }
 
 .mg-btn-plus{
@@ -61,6 +84,15 @@ h2{
   color: #3167e6;
   border-radius: 20px;
   padding: 5px 13px;
+  font-weight: 500;
+}
+
+.mg-btn-plus:hover{
+  background-color: #d9dadc;
+  color: #3167e6;
+  outline: 2px solid lightgray;
+  border: 2px solid lightgray;
+  transition: all .3s;
 }
 
 .mg-btn-now{
@@ -69,34 +101,18 @@ h2{
   color: black;
   border-radius: 20px;
   padding: 5px 13px;
+  font-weight: 500;
 }
 
-.mg-inner::after{
-  display: none;
-  content: "";
-  position: absolute;
+.mg-btn-now:hover{
+  background-color: white;
   border: 2px solid black;
-  border-radius: 20px;
-  top: 1px;
-  left: 1px;
-  right: 1px;
-  bottom: 1px;
+  outline: 2px solid white;
+  color: black;
+  transition: all .3s;
 }
 
-.mg-purchase:hover{
-  background-color: #cd3d0f;
-  border-color: #cd3d0f;
-}
-
-.mg-purchase:hover .mg-inner{
-  display: block;
-}
-
-.mg-rounded{
-  outline: 2px solid #0072ce;
-  outline-offset: 2px;
-}
-
+/* effects */
 .mg-bigger:hover{
   transform: scale(1.1);
   transition: all 1s;
@@ -117,9 +133,8 @@ h2{
 
 .mg-dropdown{
   width: 100vw !important;
-  margin-left: -80px !important;
   border: none !important;
-  margin-top: 3px !important;
+  margin-top: -3px !important;
 }
 
 hr{
@@ -131,28 +146,40 @@ hr{
   width: 5px;
   background-color: #0072ce;
   border-radius: 50%;
-  
 }
+
+.mg-dropdown li .col-1:hover{
+  background-color: white;
+  box-shadow: 0 5px 10px 0 gray;
+  transition: all 1s;
+  cursor: pointer;
+}
+
 
 /* MAIN */
 main{
   margin-top: 108px;
 }
 /* junbotron */
-.mg-game{
-  position: relative;
-  width: 100%;
-  height: 675px;
+.mg-junbo{
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.mg-game-content{
-  position: absolute;
-  left: 5%;
-  bottom: 65px;
-  max-width: 30%;
+.mg-junbo-content{
+  padding: 300px 0 50px 0;
   color: white;
+}
+
+.mg-junbo2-content{
+  padding: 100px 0 50px 0;
+  color: white;
+}
+
+/* junbo2-games */
+.mg-junbo-games{
+  margin-top: -35px;
 }
 
 .mg-box{
@@ -172,7 +199,12 @@ main{
   transition: all .5s ease-in-out;
 }
 
-.mg-rounded:hover{
+.mg-game-active{
+  outline: 2px solid #0072ce;
+  outline-offset: 2px;
+}
+
+.mg-game-active:hover{
   transform: translateY(-10px);
   box-shadow: 0 20px 25px 0px gray;
   transition: all .5s ease-in-out
